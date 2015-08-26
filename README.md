@@ -67,10 +67,10 @@ optional arguments:
   -b BLOCKSIZE, --blocksize BLOCKSIZE
                         block size of HDF5 file (default: 32)
   --version             show program's version number and exit
-  
-## Usage Examples
 
 ```
+
+## Usage Examples
 
 ## Change Log
 

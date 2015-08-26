@@ -18,6 +18,7 @@ import uuid
 from collections import defaultdict
 
 verboseprint=lambda *a, **k: None
+__version__ = "1.0"
 
 def main():
 
@@ -27,7 +28,7 @@ def main():
     parser.add_argument('-v', '--verbose', dest='verbose',  action='count', help='Increase verbosity (specify multiple times for more)')
     parser.add_argument('-o', '--output', dest='outfile', type=str, help='interaction matrix output file')
     parser.add_argument('-b','--blocksize', dest='blocksize', type=int, default=32, help='block size of HDF5 file')
-    parser.add_argument('--version', action='version', version='%(prog)s 1.0')
+    parser.add_argument('--version', action='version', version='%(prog)s '+__version__)
     
     args=parser.parse_args()
 

@@ -10,16 +10,38 @@ convert tsv (tab seperated value) text (matrix) files into hdf5 (h5) files
 
 ```
 tab2hdf/
-	tab2hdf.py - convert tsv matrix file into hdf5 file
+    tab2hdf.py - convert tsv matrix file into hdf5 file
 ```
 
 ## Installation
+tab2hdf requires numpy/h5py
 
-The main requirements are numpy and h5py.
-
-You can install the dependencies with
-
+You can install the dependencies with:
+```
 for req in $(cat requirements.txt); do pip install $req; done
+```
+
+Download the project.
+```
+wget -O tab2hdf.zip https://github.com/blajoie/tab2hdf/archive/master.zip
+```
+Or clone the git project
+```
+[ssh] - git clone git@github.com:blajoie/tab2hdf.git
+[https] - git clone https://github.com/blajoie/tab2hdf.git
+```
+
+Unzip the master:
+```
+unzip tab2hdf.zip
+cd tab2hdf/
+```
+
+After installing dependencies, you should be free to use tab2hdf.py:
+e.g.
+```
+$ python scripts/tab2hdf.py
+```
 
 ## Full Documentation
 

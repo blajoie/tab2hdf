@@ -184,6 +184,9 @@ def main():
     outhdf.create_dataset('chr_bin_range',data=chr_bin_range,dtype='int64')
     outhdf.create_dataset('bin_positions',data=bin_positions,dtype='int64')
     
+    # close the H5 file
+    outhdf.close()
+    
     if(outfile==None):
         outfile=re.sub(".matrix", "", outfile)
         outfile=re.sub(".gz", "", outfile)
